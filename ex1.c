@@ -27,7 +27,8 @@ void push(Stack *s, int val) {
     }
     s->arr[++s->top] = val;
     printf("Push: %d | Stack acum: ", val);
-    for(int i = 0; i <= s->top; i++) printf("%d ", s->arr[i]);
+    for(int i = 0; i <= s->top; i++)
+        printf("%d ", s->arr[i]);
     printf("\n");
 }
 
@@ -38,7 +39,8 @@ int pop(Stack *s) {
     }
     int val = s->arr[s->top--];
     printf("Pop: %d | Stack acum: ", val);
-    for(int i = 0; i <= s->top; i++) printf("%d ", s->arr[i]);
+    for(int i = 0; i <= s->top; i++)
+        printf("%d ", s->arr[i]);
     printf("\n");
     return val;
 }
