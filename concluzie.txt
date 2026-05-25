@@ -1,0 +1,5 @@
+Am observat că algoritmul Dijkstra nu garantează găsirea drumului 
+minim dacă există muchii cu cost negativ, deoarece folosește o 
+abordare Greedy și nu se mai întoarce la nodurile deja vizitate. 
+În schimb, Bellman-Ford procesează corect muchiile negative oferind 
+drumul cu adevărat minim, deoarece relaxează muchiile iterativ de V-1 ori.
